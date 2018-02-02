@@ -23,7 +23,7 @@ python calc_auc_v1.0.py --input-file \<Path to inputfile\> --chip-file \<Path to
 To view the available options in the script, type the following on the terminal:  
 python calc_auc_v1.0.py -h 
 
-Sets of essential and non-essential genes from Hart et al.,2015 and Hart et al.,2014 are included along with this script.  
+Sets of essential and non-essential genes from Hart et al.,2015 and Hart et al.,2014, respectively, are included along with this script.  
 
 
   
