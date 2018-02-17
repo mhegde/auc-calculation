@@ -18,10 +18,10 @@
 4. <b>Output File</b>
   
 <b>To run this script, type the following on the terminal:</b>  
-python calc_auc_v1.0.py --input-file \<Path to inputfile\> --chip-file \<Path to chip file\> --gene-set-folder \<Path to folder\> --outputfile \<Path to output file\>  
+python calc_auc_v1.1.py --input-file \<Path to inputfile\> --chip-file \<Path to chip file\> --gene-set-folder \<Path to folder\> --outputfile \<Path to output file\>  
     
 To view the available options in the script, type the following on the terminal:  
-python calc_auc_v1.0.py -h 
+python calc_auc_v1.1.py -h 
 
 Sets of essential and non-essential genes from Hart et al.,2015 and Hart et al.,2014 are included along with this script.  
 
