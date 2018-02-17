@@ -2,7 +2,7 @@
 <b>This script calculates the area-under-the-curve of user-defined gene sets for a given dataset </b>  
 <b>Author</b>: Mudra Hegde  
 <b>Email</b>: mhegde@broadinstitute.org  
-<b>Version: 1.0 </b>  
+<b>Version: 1.1 </b>  
   
 <b>Required packages</b>
 1. pandas

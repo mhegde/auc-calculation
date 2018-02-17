@@ -64,14 +64,14 @@ if __name__ == '__main__':
             print c
             df_c = merged[['Gene Symbol',c]]
             df_c.columns = ['Gene Symbol','sgRNA measured value']
-            df_c.loc[:,'percent_rank'] = rankdata(df_c['sgRNA measured value'])/len(df_c)
+            df_c.loc[:,'percent_rank'] = rankdata(df_c['sgRNA measured value'])/float(len(df_c))
             aucs = []
             row = [c]
             for i,g in enumerate(gene_sets):
                 gene_set = pd.read_table(gene_set_folder+'/'+g,header=None)
                 gene_set.columns = ['Gene Symbol']
                 df_gs = pd.merge(df_c,gene_set,on='Gene Symbol')
-                auc_gs = np.round(calc_auc(df_gs,'percent_rank'),2)
+                auc_gs = calc_auc(df_gs,'percent_rank')
                 aucs.append(auc_gs)
             row.extend(aucs)
             w.writerow((row))
