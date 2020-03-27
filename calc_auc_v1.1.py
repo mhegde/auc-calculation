@@ -58,7 +58,7 @@ if __name__ == '__main__':
     output_cols.extend(gene_set_labs)
     cols = list(input_df.columns)[1:]
     with open(outputfile,'w') as o:
-        w =  csv.writer(o,delimiter='\t')
+        w = csv.writer(o,delimiter='\t')
         w.writerow((output_cols))
         for c in cols:
             print c
