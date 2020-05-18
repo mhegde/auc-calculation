@@ -1,15 +1,7 @@
 # AUC calculation
 <b>This script calculates the area-under-the-curve of user-defined gene sets for a given dataset </b>  
 <b>Author</b>: Mudra Hegde  
-<b>Email</b>: mhegde@broadinstitute.org  
-<b>Version: 1.1 </b>  
-  
-<b>Required packages</b>
-1. pandas
-2. numpy
-3. scipy
-4. statsmodels
-5. scikit-learn
+<b>Email</b>: mhegde@broadinstitute.org
   
 <b>Inputs</b>
 1. <b>Input File</b>: .txt file with list of sgRNAs in the first column and log-fold changes for every sample in the following columns. Column names of log-fold changes will be sample name in the output file. 
