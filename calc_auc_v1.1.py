@@ -61,7 +61,7 @@ if __name__ == '__main__':
         w = csv.writer(o,delimiter='\t')
         w.writerow((output_cols))
         for c in cols:
-            print c
+            print(c)
             df_c = merged[['Gene Symbol',c]]
             df_c.columns = ['Gene Symbol','sgRNA measured value']
             df_c.loc[:,'percent_rank'] = rankdata(df_c['sgRNA measured value'])/float(len(df_c))
